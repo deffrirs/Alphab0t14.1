@@ -1,6 +1,6 @@
 /*
 
-	あ GK KASI CREDIT YT ZEEONE OFC, GK USAH RE UPLOAD
+	あ GK KASI CREDIT YT DEFFBOTz, GK USAH RE UPLOAD
 	あ SUSAH" NGE FIX, LU CUMA NUMPANG NAMA DOANG
 	あ YANG BELUM PAHAM CAR RUN DI HEROKU TONTON AJA VIDEO SEBELUMNYA
 	あ FITUR JUALAN TELAH DI HAPUS [ Bisa order sama saya klo mau ]
@@ -196,8 +196,8 @@ autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
 baper = setting.ownername
-apiku = 'https://zeeoneofc.github.io/'
-gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
+apiku = 'https://deffrirs.github.io/'
+gc_wa_lu = 'https://chat.whatsapp.com/KZRBIJYUOft8C6gRGHmS0E' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
 fake = setting.fake
@@ -2399,14 +2399,14 @@ const buttons1 = [
 
 const btn1 = {
     contentText: allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii),
-    footerText: `${tampilTanggal}${enter}${tampilWaktu}${enter}${enter}Regard @${koko.split('@')[0]}`,
+    footerText: `${tampilTanggal}${enter}${tampilWaktu}${enter}${enter}® @${ownername}`,
     buttons: buttons1,
     headerType: 6,
     locationMessage: bacotlu1.message.locationMessage
 }
 
 alpha.sendMessage(from,  btn1, MessageType.buttonsMessage,{
-        caption: 'Botwea ©2k21',
+        caption: 'Botwea ©2k22',
         "contextInfo": {
             text: 'hi',
             "forwardingScore": 1000000000,
@@ -2803,7 +2803,7 @@ case 'bcgif':
 					for (let i of ini_ownerNumber) {
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
-					"displayName": 'Owner Alphabot',
+					"displayName": 'Deffri Gans',
 					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: Ownership;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
@@ -3118,7 +3118,7 @@ await limitAdd(sender, limit)
 		            imageToBase64(pjr)
 		            .then((response) => {
 		            media =  Buffer.from(response, 'base64');
-		            alpha.sendMessage(from,media,image,{quoted:mek,caption:'Dasar wibu. Nih!!!\nJgn lupa sub YT : ZEEONE OFC'})
+		            alpha.sendMessage(from,media,image,{quoted:mek,caption:'Dasar wibu. Nih!!!\nJgn lupa sub YT : DEFFBOTz'})
 		            }
 		            )
 		            .catch((error) => {
@@ -3150,7 +3150,7 @@ await limitAdd(sender, limit)
 				    var media_ = await alpha.downloadAndSaveMediaMessage(encmedia_)
 		            anu = args.join(' ').split('|')
 		            satu = anu[0] !== '' ? anu[0] : `SUBSCRIBE`
-		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `ZEEONE OFC`
+		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `DEFFBOTz`
 		            require('./lib/fetcher.js').createExif(satu, dua)
 					require('./lib/fetcher.js').modStick(media_ , alpha, mek, from)
 					await limitAdd(sender, limit)
@@ -3423,7 +3423,7 @@ break
 						if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 							const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 							const media = await alpha.downloadAndSaveMediaMessage(encmedia, `./sticker/${sender}`)
-							exif.create('Created By', 'ZeeoneOfc', `stickwm_${sender}`)
+							exif.create('Deffri', 'Gans', `stickwm_${sender}`)
 							//ran = getRandom('.webp')
                         await ffmpeg(`./${media}`)
                             .input(media)
@@ -3450,7 +3450,7 @@ break
                     } else if ((isMedia && mek.message.videoMessage.seconds < 11 || isQuotedVideo && mek.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
                         const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
                         const media = await alpha.downloadAndSaveMediaMessage(encmedia)
-                        exif.create('Created By', 'ZeeoneOfc', `stickwm_${sender}`)
+                        exif.create('Deffri', 'Gans', `stickwm_${sender}`)
                     //    ran = getRandom('.webp')
                         await ffmpeg(`./${media}`)
                             .inputFormat(media.split('.')[1])
@@ -5858,7 +5858,7 @@ break
 if (budy.includes("eror",'error','Eror','Error')){
 					alpha.updatePresence(from, Presence.composing)
 					const daieeeee = fs.readFileSync('./sticker/10_1.webp');
-					alpha.sendMessage(from, daieeeee, sticker, { contextInfo: {mentionedJid: [sender]}, quoted: { "key": { "participant": `${numbernye}@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": "YT : ZEEONE OFC", "fileLength": "36", "pageCount": 0, "fileName": `Kenapa bisa error???`}}, "messageTimestamp": "1614069378", "status": "PENDING"}})
+					alpha.sendMessage(from, daieeeee, sticker, { contextInfo: {mentionedJid: [sender]}, quoted: { "key": { "participant": `${numbernye}@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": "YT : DEFFBOTz", "fileLength": "36", "pageCount": 0, "fileName": `Kenapa bisa error???`}}, "messageTimestamp": "1614069378", "status": "PENDING"}})
 		        }
 		if(budy.includes("@verif", "@verify","daftar")){
 			let bio_nya = await alpha.getStatus(sender)
