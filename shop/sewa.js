@@ -8,7 +8,7 @@ return `「 *PRICE LIST* 」
 ⬡ 3 MINGGU = Rp 10.000
 ⬡ 1 BULAN = Rp 15.000
 ⬡ PERMANEN = Rp 100.000
-⬡ PERMANEN + USER PREM = Rp 150.000
+⬡ PERMANEN + owner = Rp 150.000
 
 
 ⬣ PRICE JADIBOT
@@ -17,7 +17,7 @@ return `「 *PRICE LIST* 」
 
 
 ⬣ MINAT? PM
-⬡ wa.me/62887435047326
+⬡ wa.me/6282132805286
 
 
 NOTE : 
